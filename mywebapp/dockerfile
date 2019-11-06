@@ -1,0 +1,12 @@
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2
+
+WORKDIR /mywebapp
+COPY . mywebapp/
+RUN dotnet restore "mywebapp/mywebapp.csproj" 
+
+RUN dotnet build "mywebapp/mywebapp.csproj" -c Release -o /app
+RUN dotnet publish "mywebapp/mywebapp.csproj" -c Release -o /app
+
+EXPOSE 80
+WORKDIR /app
+ENTRYPOINT [ "dotnet", "mywebapp.dll" ]

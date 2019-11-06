@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/gaurav/gm/mywebapp/mywebapp.csproj": {}
+  },
+  "projects": {
+    "/home/gaurav/gm/mywebapp/mywebapp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/gaurav/gm/mywebapp/mywebapp.csproj",
+        "projectName": "mywebapp",
+        "projectPath": "/home/gaurav/gm/mywebapp/mywebapp.csproj",
+        "packagesPath": "/home/gaurav/.nuget/packages/",
+        "outputPath": "/home/gaurav/gm/mywebapp/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/home/gaurav/gm/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/gaurav/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
